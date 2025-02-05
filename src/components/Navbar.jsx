@@ -23,7 +23,7 @@ const Navbar = () => {
                         <a href="#" className='nav-link'>Bosh sahifa</a>
                         <a href="#" className='nav-link'>Biz haqimizda</a>
                         <a href="#" className='nav-link'>Yutuqlarimiz</a>
-                        <a href="#" className='nav-link'>Ekologiyani saqlash</a>
+                        <a href="#" className='nav-link'>Video rolik</a>
                         <a href="#" className='nav-link'>Tavsiyalar</a>
                     </ul>
                     <div className="nav-menu">
