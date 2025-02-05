@@ -1,0 +1,70 @@
+.header {
+    padding-top: 100px;
+
+    @media screen and (max-width: 880px) {
+        padding-top: 50px;
+    }
+
+
+    &-content {
+        @include flex(center, space-between);
+
+        @media screen and (max-width: 880px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-name {
+        @include adaptive-value('font-size', 22, 18);
+        font-family: $second-family;
+        letter-spacing: 0.50px;
+        font-weight: 500;
+
+        @media screen and (max-width: 880px) {
+            text-align: center;
+            width: 100%;
+            padding-top: 24px;
+        }
+    }
+
+    &-color_name {
+        color: #077d49;
+        font-weight: 600;
+    }
+
+    &-title {
+        @include adaptive-value('font-size', 40, 20);
+        font-family: $font-family;
+        letter-spacing: 0.50px;
+        width: 700px;
+        font-weight: 600;
+        line-height: 48px;
+
+        @media screen and (max-width: 1319px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 880px) {
+            text-align: center;
+            line-height: 43px;
+
+        }
+
+    }
+
+    &-texts {
+        @include flex(start, center);
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &-img {
+        @include adaptive-value('width', 550, 300);
+        border-radius: 12px;
+
+        @media screen and (max-width: 880px) {
+            width: 100%;
+        }
+
+    }
+}

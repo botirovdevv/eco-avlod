@@ -1,0 +1,99 @@
+.nav {
+    padding-top: 30px;
+    font-family: $font-family;
+
+    &-content {
+        @include flex(center, space-between)
+    }
+
+    &-links{
+        @include flex(center, unset);
+        gap: 24px;
+
+        @media screen and (max-width: 880px){
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 9999;
+            @include flex(center, center);
+            // padding: 55px 30px;
+            flex-direction: column;
+            background-color: #077d49;
+            transform: translateX(-100%);
+            transition: all 0.2s ease-in-out;
+        }
+
+        &.show{
+            transform: translateX(0)
+        }
+    }
+
+    &-logo{
+        @include flex(center, unset);
+        gap: 5px;
+        
+    }
+
+    &-logo_title{
+        font-size: 27px;
+        &:hover{
+            color: #077d49;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    &-link{
+        font-size: 16px;
+        font-weight: 400;
+
+        &:hover{
+            color: #077d49;
+            transition: all 0.2s ease-in-out;
+        }
+
+        @media screen and (max-width: 880px){
+            color: #fff;
+            font-size: 20px;
+        }
+
+    }
+
+    &-logo_image{
+        width: 50px;
+    }
+
+    &-menu_btn{
+        border: none;
+        font-size: 30px;
+        display: none;
+
+        @media screen and (max-width: 880px){
+            display: block;
+        }
+    }
+
+    &-close_btn{
+        position: fixed;
+        top: 30px;
+        right: 40px;
+        color: #fff;
+        font-size: 40px;
+        border: none;
+
+        display: none;
+
+        @media screen and (max-width: 880px){
+            display: block;
+        }
+    }
+
+    &-menu{
+        display: none;
+
+        @media screen and (max-width: 880px){
+            display: block;
+        }
+    }
+}
