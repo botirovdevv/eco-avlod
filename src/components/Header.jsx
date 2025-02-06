@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import img from '../assets/images/group-photo.jpg'
+import img from '../assets/images/director.jpg'
 import Aos from 'aos';
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
             <div className="container">
                 <div className="header-content">
                     <div className="header-texts"  data-aos="fade-up">
-                        <h3 className='header-name'> <span className='header-color_name'>Eco</span> Avlod Jamoasi</h3>
+                        <h3 className='header-name'>Urganch shahar 5-son maktabning <span className='header-color_name'>Eco</span> Avlod Jamoasi</h3>
                         <h1 className='header-title'>Tabiat bilan hamnafas bo'lgan, hayotning go'zalligini his etar</h1>
                     </div>
                     <div className="header-image">

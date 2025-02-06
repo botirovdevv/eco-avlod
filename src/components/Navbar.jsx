@@ -7,7 +7,6 @@ import { IoMdClose } from "react-icons/io";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-
     return (
         <nav className='nav'>
             <div className="container">
@@ -20,11 +19,10 @@ const Navbar = () => {
                         <button className='nav-close_btn' onClick={() => setIsOpen(false)}>
                             <IoMdClose />
                         </button>
-                        <a href="#" className='nav-link'>Bosh sahifa</a>
-                        <a href="#" className='nav-link'>Biz haqimizda</a>
-                        <a href="#" className='nav-link'>Yutuqlarimiz</a>
-                        <a href="#" className='nav-link'>Video rolik</a>
-                        <a href="#" className='nav-link'>Tavsiyalar</a>
+                        <a href="/" className='nav-link'>Bosh sahifa</a>
+                        <a href="#about" className='nav-link' onClick={() => setIsOpen(false)}>Biz haqimizda</a>
+                        <a href="#video" className='nav-link' onClick={() => setIsOpen(false)}>Video rolik</a>
+                        <a href="#advice" className='nav-link' onClick={() => setIsOpen(false)}>Tavsiyalar</a>
                     </ul>
                     <div className="nav-menu">
                         <button className='nav-menu_btn' onClick={() => setIsOpen(true)}>

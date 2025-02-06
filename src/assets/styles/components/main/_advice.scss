@@ -1,0 +1,21 @@
+.advice{
+    &-title{
+        font-family: $third-family;
+        font-size: 40px;
+        text-align: center;
+        padding: 50px 0 24px 0;
+    }
+
+    &-subtitle{
+        font-family: $second-family;
+        text-align: justify;
+        @include adaptive-value('font-size', 17, 14);
+        font-weight: 500;
+        letter-spacing: 0.68px;
+        line-height: 31px;
+    }
+
+    &-img{
+        width: 100px;
+    }
+}

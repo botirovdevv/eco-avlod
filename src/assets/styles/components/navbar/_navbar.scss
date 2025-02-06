@@ -1,16 +1,23 @@
 .nav {
     font-family: $font-family;
-    padding: 15px 0;
+    position: fixed;
+    @include flex(center, space-between);
+    background-color: #fff;
+    width: 100%;
+    z-index: 33;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
     &-content {
-        @include flex(center, space-between)
+        padding: 15px 0;
+        @include flex(center, space-between);
+
     }
 
-    &-links{
+    &-links {
         @include flex(center, unset);
         gap: 24px;
 
-        @media screen and (max-width: 880px){
+        @media screen and (max-width: 880px) {
             position: fixed;
             top: 0;
             left: 0;
@@ -24,56 +31,57 @@
             transition: all 0.2s ease-in-out;
         }
 
-        &.show{
+        &.show {
             transform: translateX(0)
         }
     }
 
-    &-logo{
+    &-logo {
         @include flex(center, unset);
         gap: 5px;
-        
+
     }
 
-    &-logo_title{
+    &-logo_title {
         font-size: 27px;
-        &:hover{
+
+        &:hover {
             color: #077d49;
             transition: all 0.2s ease-in-out;
         }
     }
 
-    &-link{
+    &-link {
         font-size: 16px;
         font-weight: 400;
 
-        &:hover{
+        &:hover {
             color: #077d49;
             transition: all 0.2s ease-in-out;
         }
 
-        @media screen and (max-width: 880px){
+        @media screen and (max-width: 880px) {
             color: #fff;
             font-size: 20px;
         }
 
     }
 
-    &-logo_image{
+    &-logo_image {
         width: 50px;
     }
 
-    &-menu_btn{
+    &-menu_btn {
         border: none;
         font-size: 30px;
         display: none;
 
-        @media screen and (max-width: 880px){
+        @media screen and (max-width: 880px) {
             display: block;
         }
     }
 
-    &-close_btn{
+    &-close_btn {
         position: fixed;
         top: 30px;
         right: 40px;
@@ -83,15 +91,15 @@
 
         display: none;
 
-        @media screen and (max-width: 880px){
+        @media screen and (max-width: 880px) {
             display: block;
         }
     }
 
-    &-menu{
+    &-menu {
         display: none;
 
-        @media screen and (max-width: 880px){
+        @media screen and (max-width: 880px) {
             display: block;
         }
     }
