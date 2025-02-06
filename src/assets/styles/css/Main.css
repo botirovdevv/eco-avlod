@@ -258,12 +258,12 @@ body.scroll {
   gap: 2px;
 }
 .header-img {
-  width: 550px;
+  width: 350px;
   border-radius: 12px;
 }
 @media (max-width: 1260px) {
   .header-img {
-    width: calc(300px + 250 * (100vw - 320px) / 940);
+    width: calc(300px + 50 * (100vw - 320px) / 940);
   }
 }
 @media screen and (max-width: 880px) {

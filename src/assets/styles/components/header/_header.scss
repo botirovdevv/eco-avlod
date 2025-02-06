@@ -65,7 +65,7 @@
     }
 
     &-img {
-        @include adaptive-value('width', 550, 300);
+        @include adaptive-value('width', 350, 300);
         border-radius: 12px;
 
         @media screen and (max-width: 880px) {

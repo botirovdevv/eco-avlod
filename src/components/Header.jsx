@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import img from '../assets/images/director.jpg'
+import img2 from '../assets/images/user.jpg'
 import Aos from 'aos';
 
 const Header = () => {
@@ -13,12 +14,18 @@ const Header = () => {
         <header className='header'>
             <div className="container">
                 <div className="header-content">
-                    <div className="header-texts"  data-aos="fade-up">
+                    <div className="header-texts" data-aos="fade-up">
                         <h3 className='header-name'>Urganch shahar 5-son maktabning <span className='header-color_name'>Eco</span> Avlod Jamoasi</h3>
                         <h1 className='header-title'>Tabiat bilan hamnafas bo'lgan, hayotning go'zalligini his etar</h1>
                     </div>
-                    <div className="header-image">
-                        <img src={img} className='header-img' alt="" />
+                    <div className="header-images">
+                        <div className="header-image">
+                            <img src={img} className='header-img' alt="" />
+                        </div>
+
+                        <div className="header-image">
+                            <img src={img2} className='header-img' alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
