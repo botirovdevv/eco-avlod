@@ -16,7 +16,7 @@ const Header = () => {
                 <div className="header-content">
                     <div className="header-texts" data-aos="fade-up">
                         <h3 className='header-name'>Urganch shahar 5-son maktabning <span className='header-color_name'>Eco</span> Avlod Jamoasi</h3>
-                        <h1 className='header-title'>Tabiat bilan hamnafas bo'lgan, hayotning go'zalligini his etar</h1>
+                        <h1 className='header-title'>Yer - bizning uyimiz, uni asrash burchimiz!</h1>
                     </div>
                     <div className="header-images">
                         <div className="header-image">
