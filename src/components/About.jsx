@@ -15,35 +15,63 @@ const About = () => {
                 <div className="about-content">
                     <div className="about-box" data-aos="fade-right">
                         <img width={200} className='about-img' src={img} alt="" />
-                        <p className="about-text">
-                            Shonazarov Bunyod
-                        </p>
+
+
+                        <div>
+                            <p className="about-text">
+                                Shonazarov Bunyod
+                            </p>
+                            <p className="about-text">
+                                8-V sinf o'quvchisi
+                            </p>
+                        </div>
                     </div>
                     <div className="about-box_2" data-aos="fade-up">
-                        <p className="about-text">
-                            Atabayev Amirxon
-                        </p>
+                        <div>
+                            <p className="about-text">
+                                Atabayev Amirxon
+                            </p>
+                            <p className="about-text">
+                                8-V sinf o'quvchisi
+                            </p>
+                        </div>
                         <img width={200} className='about-img' src={img2} alt="" />
                     </div>
                     <div className="about-box" data-aos="fade-right">
                         <img width={200} className='about-img' src={img3} alt="" />
-                        <p className="about-text">
-                            Kamoladinov Sobirjon
-                        </p>
+                        <div>
+                            <p className="about-text">
+                                Kamoladinov Sobirjon
+                            </p>
+                            <p className="about-text">
+                                9-G sinf o'quvchisi
+                            </p>
+                        </div>
                     </div>
 
                     <div className="about-box_2" data-aos="fade-up">
-                        <p className="about-text">
-                            Shonazarov Alixon
-                        </p>
+                        <div>
+                            <p className="about-text">
+                                Shonazarov Alixan
+                            </p>
+                            <p className="about-text">
+                                9-G sinf o'quvchisi
+                            </p>
+                        </div>
                         <img width={200} className='about-img' src={img4} alt="" />
                     </div>
 
                     <div className="about-box" data-aos="fade-right">
                         <img width={200} className='about-img' src={img5} alt="" />
-                        <p className="about-text">
-                        Otanazarov Ne’matjon
-                        </p>
+                        <div>
+                            <p className="about-text">
+                                Otanazarov Ne’matjon
+                            </p>
+                            <p className="about-text">
+                                9-A sindf o'quvchisi
+                            </p>
+
+                        </div>
                     </div>
                 </div>
                 <div className="about-video" id='video' data-aos="fade-down">
